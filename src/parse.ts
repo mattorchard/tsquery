@@ -5,7 +5,7 @@ import type {
   Identifier
 } from './index';
 
-import * as esquery from 'esquery';
+import esquery from 'esquery';
 import { SyntaxKind } from 'typescript';
 
 const IDENTIFIER_QUERY = 'identifier';
