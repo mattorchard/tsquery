@@ -2,7 +2,7 @@ import { ast } from './ast';
 import { map } from './map';
 import { match } from './match';
 import { parse } from './parse';
-import { project, files } from './project';
+// import { project, files } from './project';
 import { query } from './query';
 import { replace } from './replace';
 import { syntaxKindName } from './syntax-kind';
@@ -50,15 +50,15 @@ export { parse } from './parse';
 export { map } from './map';
 export { replace } from './replace';
 
-export { project, files } from './project';
+// export { project, files } from './project';
 
 export type API = typeof query & {
   ast: typeof ast;
   map: typeof map;
   match: typeof match;
   parse: typeof parse;
-  project: typeof project;
-  projectFiles: typeof files;
+  // project: typeof project;
+  // projectFiles: typeof files;
   query: typeof query;
   replace: typeof replace;
   syntaxKindName: typeof syntaxKindName;
@@ -82,8 +82,8 @@ api.ast = ast;
 api.map = map;
 api.match = match;
 api.parse = parse;
-api.project = project;
-api.projectFiles = files;
+// api.project = project;
+// api.projectFiles = files;
 api.query = query;
 api.replace = replace;
 api.syntaxKindName = syntaxKindName;
